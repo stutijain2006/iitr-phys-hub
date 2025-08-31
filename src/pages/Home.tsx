@@ -46,7 +46,7 @@ const Home = () => {
                   Explore Research <ArrowRight className="ml-2 w-5 h-5" />
                 </Link>
               </Button>
-              <Button asChild variant="outline" size="lg" className="border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10">
+              <Button asChild variant="outline" size="lg" className="border-primary-foreground/30 text-primary-foreground bg-primary-foreground/10">
                 <Link to="/people">
                   Meet Our Team
                 </Link>
