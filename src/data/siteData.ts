@@ -34,6 +34,19 @@ export interface Project {
   publications?: string[];
 }
 
+export interface ResearchPaper {
+  id: string;
+  title: string;
+  authors: string[];
+  journal: string;
+  year: string;
+  volume: string;
+  pages: string;
+  doi: string;
+  category: string;
+  citations: number;
+}
+
 export interface Facility {
   id: string;
   name: string;
@@ -63,40 +76,98 @@ export const siteData = {
     location: "IIT Roorkee, Uttarakhand, India"
   },
 
-  teamMembers: [
-    {
-      id: "1",
-      name: "Dr. Rajesh Kumar",
-      role: "Professor & Group Leader",
-      post: "Head of Research Group",
-      photo: "/api/placeholder/300/300",
-      email: "rajesh.kumar@phy.iitr.ac.in",
-      phone: "+91-1332-285XXX",
-      linkedin: "https://linkedin.com/in/rajeshkumar",
-      researchAreas: ["Quantum Materials", "Spintronics", "Theoretical Physics"],
-      bio: "Leading expert in quantum materials research with over 15 years of experience."
-    },
-    {
-      id: "2", 
-      name: "Dr. Priya Sharma",
-      role: "Associate Professor",
-      post: "Principal Investigator",
-      photo: "/api/placeholder/300/300",
-      email: "priya.sharma@phy.iitr.ac.in",
-      researchAreas: ["Nanophysics", "Optical Materials", "Spectroscopy"],
-      bio: "Specialist in nanoscale physics and optical characterization techniques."
-    },
-    {
-      id: "3",
-      name: "Dr. Amit Singh",
-      role: "Assistant Professor", 
-      post: "Research Coordinator",
-      photo: "/api/placeholder/300/300",
-      email: "amit.singh@phy.iitr.ac.in",
-      researchAreas: ["Computational Physics", "Machine Learning", "Materials Design"],
-      bio: "Computational physicist working on AI-driven materials discovery."
-    }
-  ],
+  teamMembers: {
+    principalInvestigators: [
+      {
+        id: "1",
+        name: "Dr. Rajesh Kumar",
+        role: "Professor & Group Leader",
+        post: "Head of Research Group",
+        photo: "/api/placeholder/300/300",
+        email: "rajesh.kumar@phy.iitr.ac.in",
+        phone: "+91-1332-285XXX",
+        linkedin: "https://linkedin.com/in/rajeshkumar",
+        researchAreas: ["Quantum Materials", "Spintronics", "Theoretical Physics"],
+        bio: "Leading expert in quantum materials research with over 15 years of experience."
+      },
+      {
+        id: "2", 
+        name: "Dr. Priya Sharma",
+        role: "Associate Professor",
+        post: "Principal Investigator",
+        photo: "/api/placeholder/300/300",
+        email: "priya.sharma@phy.iitr.ac.in",
+        researchAreas: ["Nanophysics", "Optical Materials", "Spectroscopy"],
+        bio: "Specialist in nanoscale physics and optical characterization techniques."
+      }
+    ],
+    collaborators: [
+      {
+        id: "3",
+        name: "Dr. Amit Singh",
+        role: "Assistant Professor", 
+        post: "Research Coordinator",
+        photo: "/api/placeholder/300/300",
+        email: "amit.singh@phy.iitr.ac.in",
+        researchAreas: ["Computational Physics", "Machine Learning", "Materials Design"],
+        bio: "Computational physicist working on AI-driven materials discovery."
+      },
+      {
+        id: "4",
+        name: "Dr. Sarah Wilson",
+        role: "Postdoctoral Fellow",
+        post: "Research Collaborator",
+        photo: "/api/placeholder/300/300",
+        email: "sarah.wilson@phy.iitr.ac.in",
+        researchAreas: ["Quantum Computing", "Materials Synthesis"],
+        bio: "International postdoc specializing in quantum device fabrication."
+      }
+    ],
+    phdStudents: [
+      {
+        id: "5",
+        name: "Rahul Gupta",
+        role: "PhD Scholar",
+        post: "Research Scholar",
+        photo: "/api/placeholder/300/300",
+        email: "rahul.gupta@stu.iitr.ac.in",
+        researchAreas: ["Topological Materials", "Electronic Structure"],
+        bio: "PhD student working on theoretical aspects of topological insulators."
+      },
+      {
+        id: "6",
+        name: "Neha Patel",
+        role: "PhD Scholar",
+        post: "Research Scholar",
+        photo: "/api/placeholder/300/300",
+        email: "neha.patel@stu.iitr.ac.in",
+        researchAreas: ["Experimental Condensed Matter", "Low Temperature Physics"],
+        bio: "Experimental physicist studying quantum phase transitions."
+      }
+    ],
+    ugStudents: [
+      {
+        id: "7",
+        name: "Arjun Verma",
+        role: "Undergraduate Student",
+        post: "Research Intern",
+        photo: "/api/placeholder/300/300",
+        email: "arjun.verma@st.iitr.ac.in",
+        researchAreas: ["Materials Characterization"],
+        bio: "Final year physics student working on optical spectroscopy."
+      },
+      {
+        id: "8",
+        name: "Kavya Sharma",
+        role: "Undergraduate Student", 
+        post: "Research Intern",
+        photo: "/api/placeholder/300/300",
+        email: "kavya.sharma@st.iitr.ac.in",
+        researchAreas: ["Computational Modeling"],
+        bio: "Third year student developing simulation codes for nanomaterials."
+      }
+    ]
+  },
 
   news: [
     {
@@ -142,6 +213,75 @@ export const siteData = {
       category: "Computational Physics",
       status: "ongoing" as const,
       researchers: ["Dr. Amit Singh"]
+    },
+    {
+      id: "3",
+      title: "Superconductivity in 2D Materials",
+      description: "Completed study on high-temperature superconducting phenomena in two-dimensional materials.",
+      image: "/api/placeholder/600/400",
+      category: "Condensed Matter",
+      status: "completed" as const,
+      researchers: ["Dr. Priya Sharma", "Dr. Rajesh Kumar"]
+    },
+    {
+      id: "4",
+      title: "Quantum Dot Synthesis",
+      description: "Successfully developed novel synthesis methods for quantum dots with enhanced properties.",
+      image: "/api/placeholder/600/400", 
+      category: "Nanophysics",
+      status: "completed" as const,
+      researchers: ["Dr. Amit Singh"]
+    }
+  ],
+
+  researchPapers: [
+    {
+      id: "1",
+      title: "Topological Phase Transitions in Quantum Materials",
+      authors: ["Dr. Rajesh Kumar", "Dr. Priya Sharma", "Rahul Gupta"],
+      journal: "Nature Physics",
+      year: "2024",
+      volume: "20",
+      pages: "1234-1241",
+      doi: "10.1038/s41567-024-01234-5",
+      category: "Quantum Physics",
+      citations: 45
+    },
+    {
+      id: "2", 
+      title: "Machine Learning Approaches for Materials Discovery",
+      authors: ["Dr. Amit Singh", "Dr. Sarah Wilson"],
+      journal: "Physical Review Materials",
+      year: "2024",
+      volume: "8",
+      pages: "045678",
+      doi: "10.1103/PhysRevMaterials.8.045678",
+      category: "Computational Physics",
+      citations: 32
+    },
+    {
+      id: "3",
+      title: "Optical Properties of Two-Dimensional Heterostructures",
+      authors: ["Dr. Priya Sharma", "Neha Patel", "Dr. Rajesh Kumar"],
+      journal: "Advanced Materials",
+      year: "2023",
+      volume: "35",
+      pages: "2301234",
+      doi: "10.1002/adma.202301234", 
+      category: "Nanophysics",
+      citations: 67
+    },
+    {
+      id: "4",
+      title: "Quantum Transport in Topological Insulators",
+      authors: ["Rahul Gupta", "Dr. Rajesh Kumar"],
+      journal: "Physical Review B",
+      year: "2023",
+      volume: "108",
+      pages: "195432",
+      doi: "10.1103/PhysRevB.108.195432",
+      category: "Theoretical Physics", 
+      citations: 28
     }
   ],
 

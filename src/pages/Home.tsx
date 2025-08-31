@@ -9,6 +9,12 @@ import heroImage from '@/assets/physics-lab-hero.jpg';
 
 const Home = () => {
   const { groupInfo, teamMembers, news } = siteData;
+  const allMembers = [
+    ...teamMembers.principalInvestigators,
+    ...teamMembers.collaborators,
+    ...teamMembers.phdStudents,
+    ...teamMembers.ugStudents
+  ];
 
   return (
     <div className="min-h-screen bg-background">
@@ -75,7 +81,7 @@ const Home = () => {
                     <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mx-auto mb-4">
                       <Users className="w-6 h-6 text-primary" />
                     </div>
-                    <h3 className="text-2xl font-bold text-foreground">{teamMembers.length}+</h3>
+                    <h3 className="text-2xl font-bold text-foreground">{allMembers.length}+</h3>
                     <p className="text-muted-foreground">Faculty Members</p>
                   </CardContent>
                 </Card>
@@ -111,15 +117,18 @@ const Home = () => {
                   </Badge>
                   <h2 className="text-3xl font-bold text-foreground">Meet Our Researchers</h2>
                 </div>
-                <Button asChild variant="outline">
-                  <Link to="/people">
-                    View All <ArrowRight className="ml-2 w-4 h-4" />
-                  </Link>
-                </Button>
+                <div className="text-right">
+                  <p className="text-lg font-semibold text-foreground">Meet Our Team</p>
+                  <Button asChild variant="ghost" size="sm" className="mt-1 p-0 h-auto">
+                    <Link to="/people" className="text-primary hover:text-primary/80">
+                      View All Members <ArrowRight className="ml-1 w-3 h-3" />
+                    </Link>
+                  </Button>
+                </div>
               </div>
 
               <div className="grid md:grid-cols-2 gap-6">
-                {teamMembers.slice(0, 2).map((member) => (
+                {allMembers.slice(0, 2).map((member) => (
                   <Card key={member.id} className="overflow-hidden hover:shadow-lg transition-shadow">
                     <CardContent className="p-6">
                       <div className="flex items-start gap-4">
