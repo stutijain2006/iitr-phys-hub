@@ -117,6 +117,8 @@ export const siteData = {
       {
         id: "5",
         name: "Pooja Yadav",
+        role: "PhD Student",
+        post: "Research Scholar",
         photo: "/api/placeholder/300/300",
         email: "rahul.gupta@stu.iitr.ac.in",
         researchAreas: ["Topological Materials", "Electronic Structure"],
@@ -125,6 +127,8 @@ export const siteData = {
       {
         id: "6",
         name: "Anil Kumar",
+        role: "PhD Student",
+        post: "Research Scholar",
         photo: "/api/placeholder/300/300",
         email: "neha.patel@stu.iitr.ac.in",
         researchAreas: ["Experimental Condensed Matter", "Low Temperature Physics"],
@@ -133,6 +137,8 @@ export const siteData = {
       {
         id: "9",
         name: "Divya Rani",
+        role: "PhD Student",
+        post: "Research Scholar",
         photo: "/api/placeholder/300/300",
         email: "neha.patel@stu.iitr.ac.in",
         researchAreas: ["Radial junction silicon solar cells", "Silicon nano/microwire array fabrication"],
@@ -140,6 +146,8 @@ export const siteData = {
       }, {
         id: "10",
         name: "Pooja Sudha",
+        role: "PhD Student",
+        post: "Research Scholar",
         photo: "/api/placeholder/300/300",
         email: "neha.patel@stu.iitr.ac.in",
         researchAreas: ["Experimental Condensed Matter", "Low Temperature Physics"],
@@ -147,6 +155,8 @@ export const siteData = {
       }, {
         id: "11",
         name: "Soumya",
+        role: "PhD Student",
+        post: "Research Scholar",
         photo: "/api/placeholder/300/300",
         email: "neha.patel@stu.iitr.ac.in",
         researchAreas: ["Experimental Condensed Matter", "Low Temperature Physics"],
@@ -154,6 +164,8 @@ export const siteData = {
       }, {
         id: "12",
         name: "Hemant Arora",
+        role: "PhD Student",
+        post: "Research Scholar",
         photo: "/api/placeholder/300/300",
         email: "harora@ph.iitr.ac.in ",
         researchAreas: ["Spintronics", "Nanotechnology"],
@@ -161,6 +173,8 @@ export const siteData = {
       }, {
         id: "13",
         name: "Monika",
+        role: "PhD Student",
+        post: "Research Scholar",
         photo: "/api/placeholder/300/300",
         email: "neha.patel@stu.iitr.ac.in",
         researchAreas: ["Experimental Condensed Matter", "Low Temperature Physics"],
@@ -168,6 +182,8 @@ export const siteData = {
       }, {
         id: "14",
         name: "Deepika Singh",
+        role: "PhD Student",
+        post: "Research Scholar",
         photo: "/api/placeholder/300/300",
         email: "neha.patel@stu.iitr.ac.in",
         researchAreas: ["Experimental Condensed Matter", "Low Temperature Physics"],
@@ -175,6 +191,8 @@ export const siteData = {
       }, {
         id: "15",
         name: "Khalid Ansari",
+        role: "PhD Student",
+        post: "Research Scholar",
         photo: "/api/placeholder/300/300",
         email: "neha.patel@stu.iitr.ac.in",
         researchAreas: ["Experimental Condensed Matter", "Low Temperature Physics"],
@@ -182,6 +200,8 @@ export const siteData = {
       }, {
         id: "16",
         name: "Adwaita Nair",
+        role: "PhD Student",
+        post: "Research Scholar",
         photo: "/api/placeholder/300/300",
         email: "adwaita_n@nt.iitr.ac.in",
         researchAreas: ["Experimental Condensed Matter", "Low Temperature Physics"],
@@ -189,6 +209,8 @@ export const siteData = {
       }, {
         id: "17",
         name: "Pravesh Negi",
+        role: "PhD Student",
+        post: "Research Scholar",
         photo: "/api/placeholder/300/300",
         email: "pravesh_n@ph.iitr.ac.in",
         researchAreas: ["Nano magnetism", "Theoretical Condensed Matter Physics"],
@@ -196,6 +218,8 @@ export const siteData = {
       }, {
         id: "18",
         name: "Rupali Paul",
+        role: "PhD Student",
+        post: "Research Scholar",
         photo: "./assets/rupali_garg.jpg",
         email: "neha.patel@stu.iitr.ac.in",
         researchAreas: ["Condensed Matter physics", "Biophysics"],
@@ -203,6 +227,8 @@ export const siteData = {
       }, {
         id: "19",
         name: "Anjali",
+        role: "PhD Student",
+        post: "Research Scholar",
         photo: "/api/placeholder/300/300",
         email: "neha.patel@stu.iitr.ac.in",
         researchAreas: ["Experimental Condensed Matter", "Quantum Technology", "Electronics"],
@@ -210,6 +236,8 @@ export const siteData = {
       }, {
         id: "20",
         name: "Teresa Carmel Aruja",
+        role: "PhD Student",
+        post: "Research Scholar",
         photo: "/api/placeholder/300/300",
         email: "teresa_c@ph.iitr.ac.in",
         researchAreas: ["Experimental Condensed Matter", "Low Temperature Physics"],
