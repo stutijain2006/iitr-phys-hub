@@ -24,10 +24,16 @@ export default defineConfig(({ mode }) => ({
     outDir: 'dist',
     assetsDir: 'assets',
     rollupOptions: {
+      input: {
+        main: path.resolve(__dirname, 'index.html')
+      },
       output: {
         manualChunks: undefined,
       },
     },
   },
   publicDir: 'public',
+  esbuild: {
+    target: 'es2015'
+  }
 }));
