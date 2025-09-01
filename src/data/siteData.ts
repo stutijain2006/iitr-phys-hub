@@ -68,7 +68,7 @@ export interface GalleryItem {
 // Sample data - replace with actual content
 export const siteData = {
   groupInfo: {
-    title: "Condensed Matter Physics Research Group",
+    title: "Quantum/Nano-Science and Technology Lab",
     subtitle: "Department of Physics, IIT Roorkee",
     mission: "Advancing the frontiers of condensed matter physics through cutting-edge research in quantum materials, nanophysics, and theoretical modeling.",
     description: "Our interdisciplinary research group focuses on understanding fundamental physics of quantum materials and their applications in next-generation technologies.",
@@ -80,32 +80,22 @@ export const siteData = {
     principalInvestigators: [
       {
         id: "1",
-        name: "Dr. Rajesh Kumar",
-        role: "Professor & Group Leader",
-        post: "Head of Research Group",
-        photo: "/api/placeholder/300/300",
-        email: "rajesh.kumar@phy.iitr.ac.in",
-        phone: "+91-1332-285XXX",
-        linkedin: "https://linkedin.com/in/rajeshkumar",
-        researchAreas: ["Quantum Materials", "Spintronics", "Theoretical Physics"],
-        bio: "Leading expert in quantum materials research with over 15 years of experience."
-      },
-      {
-        id: "2", 
-        name: "Dr. Priya Sharma",
+        name: "Arup Samanta",
         role: "Associate Professor",
-        post: "Principal Investigator",
-        photo: "/api/placeholder/300/300",
-        email: "priya.sharma@phy.iitr.ac.in",
-        researchAreas: ["Nanophysics", "Optical Materials", "Spectroscopy"],
-        bio: "Specialist in nanoscale physics and optical characterization techniques."
+        post: "Head of Research Group",
+        photo: "/assets/anup_samanta.jpg",
+        email: "arup.samanta[at]ph.iitr.ac.in",
+        phone: "91-01332-285161",
+        linkedin: "https://www.linkedin.com/in/arup-samanta-5885b053?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app ",
+        researchAreas: ["Quantum and Nano ELectronics", "Photonics, Magnetism & Energy Devices", "Biophysics & Nanobiotechnology"],
+        bio: "Associate Professor in the Department of Physics, IIT Roorkee, and a Visiting Researcher at National Taiwan University. Research focuses on quantum and nano-electronics, photonics and spintronics, advanced photovoltaics, and nanobiotechnology, with a special interest in nanoscale device physics and quantum technologies.."
       }
     ],
     collaborators: [
       {
         id: "3",
         name: "Dr. Amit Singh",
-        role: "Assistant Professor", 
+        role: "Assistant Professor",
         post: "Research Coordinator",
         photo: "/api/placeholder/300/300",
         email: "amit.singh@phy.iitr.ac.in",
@@ -126,9 +116,7 @@ export const siteData = {
     phdStudents: [
       {
         id: "5",
-        name: "Rahul Gupta",
-        role: "PhD Scholar",
-        post: "Research Scholar",
+        name: "Pooja Yadav",
         photo: "/api/placeholder/300/300",
         email: "rahul.gupta@stu.iitr.ac.in",
         researchAreas: ["Topological Materials", "Electronic Structure"],
@@ -136,13 +124,96 @@ export const siteData = {
       },
       {
         id: "6",
-        name: "Neha Patel",
-        role: "PhD Scholar",
-        post: "Research Scholar",
+        name: "Anil Kumar",
         photo: "/api/placeholder/300/300",
         email: "neha.patel@stu.iitr.ac.in",
         researchAreas: ["Experimental Condensed Matter", "Low Temperature Physics"],
         bio: "Experimental physicist studying quantum phase transitions."
+      },
+      {
+        id: "9",
+        name: "Divya Rani",
+        photo: "/api/placeholder/300/300",
+        email: "neha.patel@stu.iitr.ac.in",
+        researchAreas: ["Radial junction silicon solar cells", "Silicon nano/microwire array fabrication"],
+        bio: "I am pursuing my Ph.D. in Physics at IIT Roorkee under the supervision of Prof. Arup Samanta. My research focuses on the fabrication of radial junction silicon solar cells using nano/microwire arrays and exploring the dual applications of silica nano/microparticles in photovoltaics and bioimaging."
+      }, {
+        id: "10",
+        name: "Pooja Sudha",
+        photo: "/api/placeholder/300/300",
+        email: "neha.patel@stu.iitr.ac.in",
+        researchAreas: ["Experimental Condensed Matter", "Low Temperature Physics"],
+        bio: "Experimental physicist studying quantum phase transitions."
+      }, {
+        id: "11",
+        name: "Soumya",
+        photo: "/api/placeholder/300/300",
+        email: "neha.patel@stu.iitr.ac.in",
+        researchAreas: ["Experimental Condensed Matter", "Low Temperature Physics"],
+        bio: "Experimental physicist studying quantum phase transitions."
+      }, {
+        id: "12",
+        name: "Hemant Arora",
+        photo: "/api/placeholder/300/300",
+        email: "harora@ph.iitr.ac.in ",
+        researchAreas: ["Spintronics", "Nanotechnology"],
+        bio: "Ph.D. Scholar in Physics from IIT Roorkee, where my research focused on spintronics and nanotechnology, particularly dilute magnetic semiconductors for room-temperature spintronics. My expertise lies in first-principles modeling (DFT, NEGF) of electronic, magnetic, and spin transport in low-dimensional materials, along with device-level simulations of quantum and spintronic devices. I also have hands-on experience in nanofabrication, material/device characterization, and computational tools including Python, QuantumATK, Quantum Espresso, and COMSOL."
+      }, {
+        id: "13",
+        name: "Monika",
+        photo: "/api/placeholder/300/300",
+        email: "neha.patel@stu.iitr.ac.in",
+        researchAreas: ["Experimental Condensed Matter", "Low Temperature Physics"],
+        bio: "Experimental physicist studying quantum phase transitions."
+      }, {
+        id: "14",
+        name: "Deepika Singh",
+        photo: "/api/placeholder/300/300",
+        email: "neha.patel@stu.iitr.ac.in",
+        researchAreas: ["Experimental Condensed Matter", "Low Temperature Physics"],
+        bio: "Experimental physicist studying quantum phase transitions."
+      }, {
+        id: "15",
+        name: "Khalid Ansari",
+        photo: "/api/placeholder/300/300",
+        email: "neha.patel@stu.iitr.ac.in",
+        researchAreas: ["Experimental Condensed Matter", "Low Temperature Physics"],
+        bio: "Experimental physicist studying quantum phase transitions."
+      }, {
+        id: "16",
+        name: "Adwaita Nair",
+        photo: "/api/placeholder/300/300",
+        email: "adwaita_n@nt.iitr.ac.in",
+        researchAreas: ["Experimental Condensed Matter", "Low Temperature Physics"],
+        bio: "Experimental physicist studying quantum phase transitions."
+      }, {
+        id: "17",
+        name: "Pravesh Negi",
+        photo: "/api/placeholder/300/300",
+        email: "pravesh_n@ph.iitr.ac.in",
+        researchAreas: ["Nano magnetism", "Theoretical Condensed Matter Physics"],
+        bio: "My current research interest lies in investigating the emergent phenomenon of photocatalysis. Currently, I am working on solar-driven hydrogen generation using silicon-based nanostructures."
+      }, {
+        id: "18",
+        name: "Rupali Paul",
+        photo: "./assets/rupali_garg.jpg",
+        email: "neha.patel@stu.iitr.ac.in",
+        researchAreas: ["Condensed Matter physics", "Biophysics"],
+        bio: "I am a postgraduate in Physics with research interests in Condensed Matter Physics and Biophysics. I have worked on projects ranging from logarithmic/antilogarithmic amplifier design to the development of halide perovskite-based resistive memory devices, and I am currently exploring genome structure–gene expression relationships using simulation approaches"
+      }, {
+        id: "19",
+        name: "Anjali",
+        photo: "/api/placeholder/300/300",
+        email: "neha.patel@stu.iitr.ac.in",
+        researchAreas: ["Experimental Condensed Matter", "Quantum Technology", "Electronics"],
+        bio: "Experimental physicist studying quantum phase transitions."
+      }, {
+        id: "20",
+        name: "Teresa Carmel Aruja",
+        photo: "/api/placeholder/300/300",
+        email: "teresa_c@ph.iitr.ac.in",
+        researchAreas: ["Experimental Condensed Matter", "Low Temperature Physics"],
+        bio: "My research interest lies in exploring the potential of quantum technology in silicon based single electron transistors and quantum dots."
       }
     ],
     ugStudents: [
@@ -159,7 +230,7 @@ export const siteData = {
       {
         id: "8",
         name: "Kavya Sharma",
-        role: "Undergraduate Student", 
+        role: "Undergraduate Student",
         post: "Research Intern",
         photo: "/api/placeholder/300/300",
         email: "kavya.sharma@st.iitr.ac.in",
@@ -179,7 +250,7 @@ export const siteData = {
       type: "news" as const
     },
     {
-      id: "2", 
+      id: "2",
       title: "Paper Published in Nature Physics",
       date: "2024-08-10",
       summary: "Groundbreaking work on topological insulators published.",
@@ -198,39 +269,48 @@ export const siteData = {
   projects: [
     {
       id: "1",
-      title: "Topological Quantum Materials",
-      description: "Investigation of topological phases in quantum materials for next-generation electronics.",
+      title: "Room Temperature Single Atom Transistors and High Temperature Quantum Bits Using Nitrogen Deep Dopant in Silicon",
+      description: "Solid-state quantum devices such as qubits, single-electron transistors, and single-photon detectors are key to the future of electronics. Dopants like P and As in silicon have shown promise as nuclear spin, electronic spin, and charge qubits, though mostly limited to low-temperature operation. To enable high-temperature and room-temperature devices, strategies like dielectric confinement, quantum confinement, and dopant clustering have been explored. We propose nitrogen-doped silicon as a promising solution due to its high ionization energy and long coherence times, enabling room-temperature SETs, charge qubits, and single-electron current metrology..",
       image: "/api/placeholder/600/400",
-      category: "Quantum Physics",
+      category: "High Temperature Quantum Bits",
       status: "ongoing" as const,
-      researchers: ["Dr. Rajesh Kumar", "Dr. Priya Sharma"]
+      researchers: ["Dr. Arup Samanta"]
     },
     {
       id: "2",
-      title: "AI-Driven Materials Discovery", 
+      title: "Combating Carbapenem Resistant Enterobacteriacae (CRE): Using combinatorial approach of conventional",
       description: "Using machine learning to predict properties of novel materials.",
       image: "/api/placeholder/600/400",
-      category: "Computational Physics",
+      category: "Combating Carbapenem Resistant Enterobacteriacae (CRE): Using combinatorial approach of conventional",
       status: "ongoing" as const,
-      researchers: ["Dr. Amit Singh"]
+      researchers: ["Dr. Arup Samanta","Prof. Saugata Hazra", "Prof. Pradip K Maji"]
     },
     {
       id: "3",
-      title: "Superconductivity in 2D Materials",
+      title: "Development of catheter-based point of care rapid multi-stage diagnostics towards surveillance of patients",
       description: "Completed study on high-temperature superconducting phenomena in two-dimensional materials.",
       image: "/api/placeholder/600/400",
-      category: "Condensed Matter",
+      category: "Nanobiotechnology",
       status: "completed" as const,
-      researchers: ["Dr. Priya Sharma", "Dr. Rajesh Kumar"]
+      researchers: ["Dr. Arup Samanta", "Prof. Saugata Hazra", "Prof. Mayank Goswami", "Dr. Amrita Gaurav", "Prof. Manish K. Tiwari"]
     },
     {
       id: "4",
-      title: "Quantum Dot Synthesis",
+      title: "Silicon nanowire based radial p-n junction solar cells with high and stable efficiency at low-cost",
       description: "Successfully developed novel synthesis methods for quantum dots with enhanced properties.",
-      image: "/api/placeholder/600/400", 
-      category: "Nanophysics",
+      image: "/api/placeholder/600/400",
+      category: "Silicon nanowire based radial p-n junction solar cells with high and stable efficiency at low-cost",
       status: "completed" as const,
-      researchers: ["Dr. Amit Singh"]
+      researchers: ["Dr. Arup Samanta"]
+    },
+    {
+      id: "5",
+      title: "Synthesis of Silicon Nanowire Based Solar Cells by Wet Chemical Methods",
+      description: "Successfully developed novel synthesis methods for quantum dots with enhanced properties.",
+      image: "/api/placeholder/600/400",
+      category: "Synthesis of Silicon Nanowire Based Solar Cells by Wet Chemical Methods",
+      status: "completed" as const,
+      researchers: ["Dr. Arup Samanta"]
     }
   ],
 
@@ -248,7 +328,7 @@ export const siteData = {
       citations: 45
     },
     {
-      id: "2", 
+      id: "2",
       title: "Machine Learning Approaches for Materials Discovery",
       authors: ["Dr. Amit Singh", "Dr. Sarah Wilson"],
       journal: "Physical Review Materials",
@@ -267,7 +347,7 @@ export const siteData = {
       year: "2023",
       volume: "35",
       pages: "2301234",
-      doi: "10.1002/adma.202301234", 
+      doi: "10.1002/adma.202301234",
       category: "Nanophysics",
       citations: 67
     },
@@ -280,7 +360,7 @@ export const siteData = {
       volume: "108",
       pages: "195432",
       doi: "10.1103/PhysRevB.108.195432",
-      category: "Theoretical Physics", 
+      category: "Theoretical Physics",
       citations: 28
     }
   ],
@@ -314,16 +394,16 @@ export const siteData = {
       description: "Our main research laboratory facility"
     },
     {
-      id: "2", 
+      id: "2",
       title: "Team Meeting",
-      image: "/api/placeholder/800/600", 
+      image: "/api/placeholder/800/600",
       category: "events" as const,
       date: "2024-08-15",
       description: "Weekly research group meeting"
     },
     {
       id: "3",
-      title: "Quantum Measurement Setup", 
+      title: "Quantum Measurement Setup",
       image: "/api/placeholder/800/600",
       category: "equipment" as const,
       date: "2024-07-20",
@@ -332,7 +412,7 @@ export const siteData = {
     {
       id: "4",
       title: "Best Paper Award",
-      image: "/api/placeholder/800/600", 
+      image: "/api/placeholder/800/600",
       category: "achievements" as const,
       date: "2024-08-10",
       description: "International conference recognition"

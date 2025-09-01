@@ -1,7 +1,7 @@
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { siteData } from '@/data/siteData';
-import { Microscope, Users, Calendar, Target, FileText, ExternalLink, Quote } from 'lucide-react';
+import { Microscope, Users, Target, FileText, ExternalLink, Quote, TestTube } from 'lucide-react';
 
 const Research = () => {
   const { projects, researchPapers } = siteData;
@@ -55,23 +55,23 @@ const Research = () => {
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
               {
-                title: 'Quantum Materials',
-                description: 'Topological insulators, superconductors, and quantum phase transitions',
+                title: 'Electronics',
+                description: 'Silicon based single electron transistors and quantum dots',
                 icon: Target
               },
               {
-                title: 'Nanophysics',
-                description: 'Low-dimensional systems and quantum confinement effects',
+                title: 'Spintronics',
+                description: 'Electronics and magnetic materials',
                 icon: Microscope
               },
               {
-                title: 'Spectroscopy',
-                description: 'Advanced optical characterization and measurement techniques',
-                icon: Calendar
+                title: 'Biophysics',
+                description: 'Biophysics and bio-inspired materials',
+                icon: TestTube
               },
               {
-                title: 'Theory & Simulation',
-                description: 'Computational modeling and theoretical predictions',
+                title: 'Solar Cell Technology',
+                description: 'Inverted pyrmaid arrays for solar cell applications',
                 icon: Users
               }
             ].map((area) => (

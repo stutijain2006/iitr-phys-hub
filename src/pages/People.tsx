@@ -88,20 +88,9 @@ const People = () => {
                       <User className="w-12 h-12 text-primary" />
                     </div>
                     <CardTitle className="text-xl mb-2 text-foreground">{member.name}</CardTitle>
-                    <Badge className="bg-primary/10 text-primary border-primary/20 font-medium">
-                      {member.role}
-                    </Badge>
                   </CardHeader>
                   
                   <CardContent className="space-y-4 p-6">
-                    <div>
-                      <h4 className="font-semibold text-foreground mb-2 flex items-center gap-2">
-                        <div className="w-2 h-2 bg-primary rounded-full"></div>
-                        Position
-                      </h4>
-                      <p className="text-muted-foreground pl-4">{member.post}</p>
-                    </div>
-
                     <div>
                       <h4 className="font-semibold text-foreground mb-2 flex items-center gap-2">
                         <div className="w-2 h-2 bg-accent rounded-full"></div>
